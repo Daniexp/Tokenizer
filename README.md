@@ -1,4 +1,4 @@
-# 🚀 BEP-20 Token Project – [YourToken42 Name Here]
+# 🚀 BEP-20 Token Project – DELToken42
 
 ## 📌 Project Overview
 
@@ -8,8 +8,8 @@ This project is part of a school assignment to design and deploy a custom BEP-20
 
 ## 💡 Token Information
 
-- **Token Name**: [YourToken42]  
-- **Token Symbol**: [YTK42]  
+- **Token Name**: DEL42
+- **Token Symbol**: DEL42
 - **Total Supply**: [e.g., 1000000 (1 million tokens)]  
 - **Decimals**: [e.g., 18]  
 - **Standard**: BEP-20 (Binance Smart Chain)  
@@ -21,8 +21,8 @@ This project is part of a school assignment to design and deploy a custom BEP-20
 ## 🧠 Design Choices & Justification
 
 ### 🔠 Token Name & Symbol
-- The name `[YourToken42]` includes "42" as required.
-- Symbol `[YTK42]` is short, readable, and reflects the token name.
+- The name DELToken42 includes "42" as required.
+- Symbol DEL42 is short, readable, and reflects the token name.
 
 ### ⚙️ Technical Stack
 - **Blockchain Platform**: Binance Smart Chain (Testnet)  
@@ -81,9 +81,9 @@ After deployment:
 
 ## 👤 Author
 
-- **Name**: [Your Name]  
-- **School**: [Your School Name]  
-- **Class / Course**: [e.g., Blockchain Fundamentals, Semester 2]  
+- **Name**: Daniel Expósito López
+- **School**: 42 Madrid
+- **Class / Course**: outcorer proyect - Tokenizer
 
 ---
 
