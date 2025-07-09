@@ -1,4 +1,4 @@
-# 🚀 BEP-20 Token Project – DELToken42
+# 🚀 BEP-20 Token Project – RAFFLE42
 
 ## 📌 Project Overview
 
@@ -8,10 +8,10 @@ This project is part of a school assignment to design and deploy a custom BEP-20
 
 ## 💡 Token Information
 
-- **Token Name**: DEL42
-- **Token Symbol**: DEL42
-- **Total Supply**: [e.g., 1000000 (1 million tokens)]  
-- **Decimals**: [e.g., 18]  
+- **Token Name**: RAFFLE42
+- **Token Symbol**: RAF42
+- **Total Supply**: 1000000
+- **Decimals**: 18  
 - **Standard**: BEP-20 (Binance Smart Chain)  
 - **Network**: BSC Testnet  
 - **Deployed With**: Remix IDE + MetaMask (using tBNB for gas)
@@ -19,10 +19,14 @@ This project is part of a school assignment to design and deploy a custom BEP-20
 ---
 
 ## 🧠 Design Choices & Justification
+The fungible token will be use as payment to participate in a raffle and the contract is able to save a register of all the tickets and select a winner selecting a random token/ticket and reset the register for a new raffle.
+- 1 token = 1 ticket
+- Random winner selection
+- Reset register for new ruffles
 
 ### 🔠 Token Name & Symbol
-- The name DELToken42 includes "42" as required.
-- Symbol DEL42 is short, readable, and reflects the token name.
+- The name RAFFLE42 includes "42" as required and the main use of the token itself.
+- Symbol RAF42 is short, readable, and reflects the token name.
 
 ### ⚙️ Technical Stack
 - **Blockchain Platform**: Binance Smart Chain (Testnet)  
@@ -43,7 +47,10 @@ This project is part of a school assignment to design and deploy a custom BEP-20
   - `approve()`
   - `transferFrom()`
   - `allowance()`
-
+- Raffle participants are able to buy tokens
+- Token owners can add tokens to the raffle
+- The deployer will be able start the winner selection
+- When a winner is selected the register is clean for new raffles
 ---
 
 ## 🚀 How to Deploy the Token
@@ -60,6 +67,9 @@ This project is part of a school assignment to design and deploy a custom BEP-20
 4. Connect MetaMask to Remix (Injected Provider – MetaMask).
 5. Deploy the contract to BSC Testnet.
 6. Verify the contract if needed (optional).
+7. "Buy" tokens
+8. Add the tokens to the raffle
+9. With the deployer wallet select a winner
 
 ---
 
