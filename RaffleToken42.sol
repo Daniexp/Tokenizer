@@ -9,13 +9,15 @@ struct Raffle {
 }
 
 contract Raffle42 is ERC20 {
-	Raffle[] raffle;
+	Raffle[] internal raffle;
     address  internal owner;
 
 
 	constructor() ERC20("RAFFLE42", "RAF42") {
-		_mint(msg.sender, 1000000);
-        owner = msg.sender;
+		owner = msg.sender;
+        raffle.push(Raffle({winner: address(0), tickets: new address[](0)}));
+
+        _mint(msg.sender, 1000000);
     }
     function getActualRaffle() internal view returns(uint256) {
         require(raffle.length > 0);
@@ -41,6 +43,7 @@ contract Raffle42 is ERC20 {
         require(raffle[raffleIndex].tickets.length > 0, "The raffle doesn't have participants");
         uint256 winner =  uint(keccak256(abi.encodePacked(block.timestamp, msg.sender, raffleIndex))) % (raffle[raffleIndex].tickets.length);
         raffle[raffleIndex].winner = raffle[raffleIndex].tickets[winner];
+        raffle.push(Raffle({ winner: address(0), tickets: new address[](0)}));
         return raffle[raffleIndex].winner;
     }
 }
