@@ -13,10 +13,6 @@ struct Raffle {
     uint256 endTimestamp;
     // Prize will be a nft that ideally will represent the ownership of some item in the real world or a digital asset
 }
-struct Person {
-    string name;
-    address wallet;
-}
 
 contract Raffle42 is ERC20 {
     mapping (uint256 => Raffle) public raffles;
